@@ -7,9 +7,11 @@
     <groupId>123</groupId>
     <artifactId>456</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <aspectj.version>1.9.2</aspectj.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -60,7 +62,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/suites/test.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/suites/testng_suite1.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
