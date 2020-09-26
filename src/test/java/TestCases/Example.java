@@ -5,9 +5,12 @@ import org.openqa.selenium.*;
 import utils.WebDriverFactory;
 
 import java.util.concurrent.TimeUnit;
+import org.testng.annotations.Test;
 
 public class Example {
-    public static void main (String...args) throws InterruptedException{
+
+    @Test
+    public static void firtsTest(){
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.get("https://www.amazon.com.mx/");
         driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
